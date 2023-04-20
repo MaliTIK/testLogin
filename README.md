@@ -81,7 +81,7 @@
 </head>
 <body>
 	<h2>Login or Register</h2>
-	<form id="login-form">
+	<form id="login-form" method="post" action="test.php">
 		<label for="email">Email:</label>
 		<input type="email" id="email" name="email" required>
 		<label for="password">Password:</label>
@@ -89,7 +89,8 @@
 		<input type="submit" value="Login">
 		<button type="button" id="register-btn">Register</button>
 	</form>
-	<form id="register-form" style="display: none;">
+
+	<form id="register-form" style="display: none;" method="post" action="test.php">
 		<label for="email">Email:</label>
 		<input type="email" id="email" name="email" required>
 		<label for="password">Password:</label>
@@ -100,7 +101,8 @@
 			<option value="+1">USA (+1)</option>
 			<option value="+44">UK (+44)</option>
 			<option value="+81">Japan (+81)</option>
-			<!-- add more phone number flags/options here -->
+			<!-- add more phone number flags
+
 		</select>
 		
 		<input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{9}" required>
@@ -127,3 +129,5 @@
 
 </body>
 </html>
+
+
